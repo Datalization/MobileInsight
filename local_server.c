@@ -21,7 +21,7 @@ struct pollfd pollfds[1];
 
 int main()
 {
-    int port_number= 20;
+    int port_number= 2048;
     struct sockaddr_in serv_addr,cli_addr;
     sockfd = socket(AF_INET,SOCK_STREAM,0);
     if(sockfd<0)

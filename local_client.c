@@ -11,7 +11,6 @@
 #include <poll.h>
 #include <fcntl.h>
 #include <arpa/inet.h>
-#include "zlib.h"
 
 struct pollfd pollfds[2];
 int buffer_size = 2048;
@@ -19,7 +18,7 @@ int sockfd;
 
 int main()
 {
-    int port_number = 20;
+    int port_number = 2048;
     struct sockaddr_in serv_addr;
     struct hostent *server;
     sockfd = socket(AF_INET, SOCK_STREAM, 0);
